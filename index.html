@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1>🌟 Welcome to The Emoji Universe! 🚀</h1>
+    <h2>✦•┈๑⋅⋯ ⋯⋅๑┈•✦</h2>
     <h2>Celestial Emojis 💫</h2>
     <h3>🌚 🌝 🌔 🌖 🌗 🌒 🌛 🌜</h3>
 
@@ -21,21 +22,137 @@
     <marquee behavior="scroll" direction="up" scrollamount="4">
       <h1>What is your zodiac sign?</h1>
     </marquee>
-<select>
-  <option value="" selected>--Please choose your zodiac sign--</option>
-  <option value="capricorn">♑ Capricorn (Dec 22 - Jan 19)</option>
-  <option value="aquarius">♒ Aquarius (Jan 20 - Feb 18)</option>
-  <option value="pisces">♓ Pisces (Feb 19 - Mar 20)</option>
-  <option value="aries">♈ Aries (Mar 21 - Apr 19)</option>
-  <option value="taurus">♉ Taurus (Apr 20 - May 20)</option>
-  <option value="gemini">♊ Gemini (May 21 - Jun 20)</option>
-  <option value="cancer">♋ Cancer (Jun 21 - Jul 22)</option>
-  <option value="leo">♌ Leo (Jul 23 - Aug 22)</option>
-  <option value="virgo">♍ Virgo (Aug 23 - Sep 22)</option>
-  <option value="libra">♎ Libra (Sep 23 - Oct 22)</option>
-  <option value="scorpio">♏ Scorpio (Oct 23 - Nov 21)</option>
-  <option value="sagittarius">♐ Sagittarius (Nov 22 - Dec 21)</option>
-</select>
+    <select onchange="document.querySelectorAll('.zodiac-description').forEach(el => el.hidden = true); if(this.value) document.getElementById(this.value).hidden = false;">
+      <option value="">--Please choose your zodiac sign--</option>
+      <option value="capricorn">Capricorn (Dec 22 - Jan 19)</option>
+      <option value="aquarius">Aquarius (Jan 20 - Feb 18)</option>
+      <option value="pisces">Pisces (Feb 19 - Mar 20)</option>
+      <option value="aries">Aries (Mar 21 - Apr 19)</option>
+      <option value="taurus">Taurus (Apr 20 - May 20)</option>
+      <option value="gemini">Gemini (May 21 - Jun 20)</option>
+      <option value="cancer">Cancer (Jun 21 - Jul 22)</option>
+      <option value="leo">Leo (Jul 23 - Aug 22)</option>
+      <option value="virgo">Virgo (Aug 23 - Sep 22)</option>
+      <option value="libra">Libra (Sep 23 - Oct 22)</option>
+      <option value="scorpio">Scorpio (Oct 23 - Nov 21)</option>
+      <option value="sagittarius">Sagittarius (Nov 22 - Dec 21)</option>
+    </select>    
+    
+    <!-- Zodiac descriptions -->
+    <center>
+      <h2 id="capricorn" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Capricorn ~ The Goat ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🐐</span> <br>
+        <span style="font-size: 50px;">🏔️💼🛠️</span> <br>
+        ⋆✴︎˚｡⋆ Very disciplined <br>
+        ⋆✴︎˚｡⋆ Famous Capricorn: Martin Luther King Jr.
+      </h2>
+      
+      <h2 id="aquarius" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Aquarius ~ The Water Bearer ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🌊</span> <br>
+        <span style="font-size: 50px;">⚡🌐🧠</span> <br>
+        ⋆✴︎˚｡⋆ Independent <br>
+        ⋆✴︎˚｡⋆ Creative <br>
+        ⋆✴︎˚｡⋆ Famous Aquarius: Oprah Winfrey
+      </h2>
+      
+      <h2 id="pisces" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Pisces ~ The Fish ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🐟</span> <br>
+        <span style="font-size: 50px;">🌊🎨💭</span> <br>
+        ⋆✴︎˚｡⋆ Imaginative <br>
+        ⋆✴︎˚｡⋆ Deeply emotional <br>
+        ⋆✴︎˚｡⋆ Famous Pisces: Albert Einstein
+      </h2>
+      
+      <h2 id="aries" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Aries ~ The Ram ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🐏</span> <br>
+        <span style="font-size: 50px;">🔥⚔️🏆</span> <br>
+        ⋆✴︎˚｡⋆ Bold and fearless <br>
+        ⋆✴︎˚｡⋆ Energetic leader <br>
+        ⋆✴︎˚｡⋆ Famous Aries: Lady Gaga
+      </h2>
+      
+      <h2 id="taurus" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Taurus ~ The Bull ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🐂</span> <br>
+        <span style="font-size: 50px;">🌿💰🍷</span> <br>
+        ⋆✴︎˚｡⋆ Loyal and dependable <br>
+        ⋆✴︎˚｡⋆ Appreciates luxury <br>
+        ⋆✴︎˚｡⋆ Famous Taurus: Adele
+      </h2>
+      
+      <h2 id="gemini" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Gemini ~ The Twins ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">👯</span> <br>
+        <span style="font-size: 50px;">🗣️📚🎭</span> <br>
+        ⋆✴︎˚｡⋆ Curious and witty <br>
+        ⋆✴︎˚｡⋆ Social and adaptable <br>
+        ⋆✴︎˚｡⋆ Famous Gemini: Marilyn Monroe
+      </h2>
+      
+      <h2 id="cancer" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Cancer ~ The Crab ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🦀</span> <br>
+        <span style="font-size: 50px;">🏠💖🌙</span> <br>
+        ⋆✴︎˚｡⋆ Deeply intuitive <br>
+        ⋆✴︎˚｡⋆ Protective of loved ones <br>
+        ⋆✴︎˚｡⋆ Famous Cancer: Princess Diana
+      </h2>
+      
+      <h2 id="leo" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Leo ~ The Lion ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🦁</span> <br>
+        <span style="font-size: 50px;">🌞👑🎤</span> <br>
+        ⋆✴︎˚｡⋆ Confident and charismatic <br>
+        ⋆✴︎˚｡⋆ Natural-born leader <br>
+        ⋆✴︎˚｡⋆ Famous Leo: Barack Obama
+      </h2>
+      
+      <h2 id="virgo" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Virgo ~ The Virgin ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🌾</span> <br>
+        <span style="font-size: 50px;">📋📏🧼</span> <br>
+        ⋆✴︎˚｡⋆ Analytical and practical <br>
+        ⋆✴︎˚｡⋆ Highly organized <br>
+        ⋆✴︎˚｡⋆ Famous Virgo: Beyoncé
+      </h2>
+      
+      <h2 id="libra" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Libra ~ The Scales ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">⚖️</span> <br>
+        <span style="font-size: 50px;">💄🎨🌹</span> <br>
+        ⋆✴︎˚｡⋆ Charming and diplomatic <br>
+        ⋆✴︎˚｡⋆ Loves harmony and balance <br>
+        ⋆✴︎˚｡⋆ Famous Libra: Doja Cat
+      </h2>
+      
+      <h2 id="scorpio" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Scorpio ~ The Scorpion ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🦂</span> <br>
+        <span style="font-size: 50px;">🕶️🔥🔮</span> <br>
+        ⋆✴︎˚｡⋆ Mysterious and intense <br>
+        ⋆✴︎˚｡⋆ Passionate and determined <br>
+        ⋆✴︎˚｡⋆ Famous Scorpio: Matthew McConaughey
+      </h2>
+      
+      <h2 id="sagittarius" class="zodiac-description" hidden>
+        ⛧°｡⋆༺ Sagittarius ~ The Archer ༻⋆｡°⛧ <br> 
+        <span style="font-size: 150px;">🏹</span> <br>
+        <span style="font-size: 50px;">🌍✈️📚</span> <br>
+        ⋆✴︎˚｡⋆ Adventurous and free-spirited <br>
+        ⋆✴︎˚｡⋆ Loves exploring new ideas <br>
+        ⋆✴︎˚｡⋆ Famous Sagittarius: Miley Cyrus
+      </h2>
+      
+    </center>
+    
+
+    
+    
+    
 <figure>
   <pre id="shooting star"
 </figure>
